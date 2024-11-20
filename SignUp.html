@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Novel Ideas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+        li, a, button{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #edf0f1;
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: #24252A
+        }
+        .logo{
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .nav-links{
+            list-style: none;
+        }
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .nav-links li a{
+            transition: all 0.3s ease 0s;
+        }
+        .nav-links li a:hover{
+            color: #0088a9;
+        }
+        button{
+            margin-left: 20px;
+            padding: 9px 25px;
+            background-color: rgba(0, 136, 169, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover{
+            background-color: rgba(0, 136, 169, 0.8);
+        }
+        footer{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #17181b;
+        }
+        .footerContainer{
+            width: 100%;
+            padding: 0px 30px 0px;
+        }
+        .socialIcons{
+            display: flex;
+            justify-content: center;
+        }
+        .socialIcons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: ;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .socialIcons a i{
+            font-size: 2em;
+            color: white;
+            opacity: 0.9;
+        }
+        .socialIcons a:hover{
+            
+            transition: 0.5s;
+        }
+        .socialIcons a:hover i{
+            color: rgba(0, 136, 169, 1);
+            transition: 0.5s;
+        }
+        .footerBottom{
+            ;
+            padding: 20px;
+            text-align: center;
+        }
+        .footerBottom p{
+            color: #edf0f1;
+        }
+        .designer{
+            opacity: 0.7;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+        main{
+            background-color: #a7a7aa;
+        }
+        .main{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header -->
+        <a class="logo" href="/index.html"><img src="/Images/Untitled 2.png" alt="Logo" height="35px"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/About.html">About us</a></li>
+                <li><a href="/Contact.html">Contact us</a></li>
+                <li><a href="/Services.html">Services</a></li>
+                <li><a href="/Books.html">Books</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Sign up</button></a>
+    </header>
+    <main>
+        <br>
+        <h1 class="main" style="text-align: center;">Join Us Now</h1>
+        <br>
+        <hr color="black">
+        <br>
+
+        <!-- Form -->
+        <form style="text-align: center;" action="/index.html" method="post">
+            <!-- Text -->
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" placeholder="John Doe">
+            <br><br>
+            <!-- Radio -->
+            <p>Gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" name="gen" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gen" id="female">
+            <label for="other">Other</label>
+            <input type="radio" name="gen" id="other">
+            <br><br>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <!-- Phone No. -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="000-000-0000">
+            <br><br>
+            <!-- Checkbox -->
+            <p>Interests:</p>
+            <input type="checkbox" name="int1" id="int1">
+            <label for="int1">Non-Fiction</label>
+            <input type="checkbox" name="int2" id="int2">
+            <label for="int2">Fiction</label>
+            <input type="checkbox" name="int3" id="int3">
+            <label for="int3">Myster/Thriller/Crime</label>
+            <input type="checkbox" name="int4" id="int4">
+            <label for="int4">Fantasy/Science Fiction</label>
+            <input type="checkbox" name="int5" id="int5">
+            <label for="int5">Romance</label>
+            <input type="checkbox" name="int6" id="int6">
+            <label for="int6">Others</label>
+            <br><br>
+            <!-- Password -->
+            <label for="pass">Create a Password</label>
+            <input type="password" name="pass" id="pass">
+            <br><br>
+            <!-- Dropdown -->
+            <label for="yob">Select age:</label>
+            <select name="yob" id="yob">
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="other">More</option>
+            </select>
+            <br><br>
+            <!-- TextArea -->
+            <label for="fb">Message:</label>
+            <textarea name="fb" id="fb" cols="30" rows="10" placeholder="Write your message here"></textarea>
+            <br><br>
+            <!-- Reset Button -->
+            <input type="reset" value="Reset">
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+        <!-- Top Button -->
+        <button><a href="#top">Top</a></button>
+        <br><br>
+    </main>
+    <footer>
+        <!-- Footer -->
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 | Designed by: <span class="designer">Prakhar Srivastava</span></p>
+        </div>
+    </footer>
+    </body>
